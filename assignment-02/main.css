@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+}
+
+.box {
+    border: 5px black solid;
+    padding: 10px 5px 10px 5px;
+    margin: 20px 15px 20px 15px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.firstbox {
+    height: 300px;
+    width: 50%;
+    display: none;
+}
+
+.lastbox:hover {
+    background-color: grey;
+}
