@@ -5,16 +5,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-
 }
 
 .main-header {
     width: 100%;
-    background-color: #2ddf5c;
-    padding: 8px 16px;
     position: fixed;
     top: 0;
     left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
     z-index: 1;
 }
 
@@ -24,8 +23,8 @@ body {
 }
 
 .main-header__brand {
-    text-decoration: none;
     color: #0e4f1f;
+    text-decoration: none;
     font-weight: bold;
     font-size: 22px;
 }
@@ -49,8 +48,8 @@ body {
 }
 
 .main-nav__item a {
-    color: #0e4f1f;
     text-decoration: none;
+    color: #0e4f1f;
     font-weight: bold;
     padding: 3px 0;
 }
@@ -58,12 +57,12 @@ body {
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
-    border-bottom: 5px white solid;
+    border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
     color: white;
-    background-color: #ff1b68;
+    background: #ff1b68;
     padding: 8px 16px;
     border-radius: 8px;
 }
@@ -71,7 +70,7 @@ body {
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
     color: #ff1b68;
-    background-color: white;
+    background: white;
     border: none;
 }
 
