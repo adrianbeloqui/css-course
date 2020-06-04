@@ -1,13 +1,31 @@
 #product-overview {
-    background: url("freedom.jpg");
+    /* background: url("freedom.jpg"); */
+    /* background-image: url("freedom.jpg"); */
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+        url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box,
+        #ff1b68;
+    /* background-size: 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: 0% 100%; */
+    /* background-position: left bottom; */
+    /* background-position: left 10% bottom 20%; */
+    /* background-image: linear-gradient(180deg, red, blue, green, yellow, #ffa500); */
+    /* background-image: radial-gradient(circle 20px at 20% 50%, red, blue, green); */
     padding: 10px;
     width: 100%;
     height: 528px;
+    margin-top: 43px;
+    /* border: 5px dashed red; */
+    position: relative;
 }
 
 #product-overview h1 {
     font-family: 'Anton', sans-serif;
     color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
 }
 
 .section-title {
@@ -102,6 +120,7 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: auto;
+    padding: 20px;
 }
 
 .key-feature__description {
