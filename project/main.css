@@ -2,7 +2,7 @@
     /* background: url("freedom.jpg"); */
     /* background-image: url("freedom.jpg"); */
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-        url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+        url("images/freedom.jpg") left 20% top 65%/cover no-repeat border-box,
         #ff1b68;
     /* background-size: 100%; */
     /* background-size: cover; */
@@ -12,9 +12,8 @@
     /* background-position: left 10% bottom 20%; */
     /* background-image: linear-gradient(180deg, red, blue, green, yellow, #ffa500); */
     /* background-image: radial-gradient(circle 20px at 20% 50%, red, blue, green); */
-    width: 100vw;
-    height: 50vh;
-    margin-top: 2.57rem;
+    width: 100%;
+    height: 40vh;
     /* border: 5px dashed red; */
     position: relative;
 }
@@ -25,6 +24,7 @@
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size: 1.6rem;
 }
 
 .section-title {
@@ -32,26 +32,17 @@
     text-align: center;
 }
 
-.plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    margin: 0.5rem auto;
+    width: 95%;
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -107,9 +98,8 @@
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
+    margin: 2.5rem 0;
 }
 
 .key-feature__image {
@@ -176,4 +166,54 @@
 .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+}
+
+@media (min-width: 40rem) and (min-height: 45rem) {
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 30rem) and (max-height: 45rem) and (orientation: landscape) {
+    #product-overview {
+        background-position: 50% 20%;
+    }
+
+    #product-overview h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 40rem) {
+
+    .plan__list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .plan {
+        display: inline-block;
+        width: 30%;
+        margin: 0.5rem;
+        vertical-align: middle;
+        min-width: 13rem;
+        max-width: 25rem;
+    }
+
+    .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        max-width: 25rem;
+        vertical-align: top;
+    }
 }
