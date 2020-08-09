@@ -38,6 +38,10 @@ main {
     border-color: #ff5454;
 }
 
+.package:hover {
+    animation: package-jump 0.3s ease-out forwards;
+}
+
 .package__link {
     text-decoration: none;
     color: inherit;
@@ -135,5 +139,14 @@ main {
     #free:hover,
     #free:active {
         border-right-color: #ff5454;
+    }
+}
+
+@keyframes package-jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-0.2rem);
     }
 }
